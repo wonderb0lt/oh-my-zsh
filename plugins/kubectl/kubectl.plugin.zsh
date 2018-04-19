@@ -26,6 +26,7 @@ alias kgp='k get pods'
 alias kep='k edit pods'
 alias kdp='k describe pods'
 alias kdelp='k delete pods'
+alias kgpl='function _kgpl(){ label=$1; shift; kgp -l $label $*; };_kgpl'
 
 # Service management.
 alias kgs='k get svc'
@@ -58,6 +59,10 @@ alias kdn='k describe node'
 # Tools for accessing all information
 alias kga='k get all'
 alias kgaa='k get all --all-namespaces'
+
+# Forward a local port to a pod
+alias kpf='k port-forward'
+
 # Logs
 alias kl='k logs'
 alias klf='k logs -f'
