@@ -51,6 +51,13 @@ alias kgrs='k get rs'
 alias krh='k rollout history'
 alias kru='k rollout undo'
 
+# Node management
+alias kgn='k get nodes'
+alias kdn='k describe node'
+
+# Tools for accessing all information
+alias kga='k get all'
+alias kgaa='k get all --all-namespaces'
 # Logs
 alias kl='k logs'
 alias klf='k logs -f'
